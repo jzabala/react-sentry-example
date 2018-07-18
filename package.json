@@ -8,11 +8,13 @@
     "react-dom": "^16.4.1"
   },
   "devDependencies": {
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "sentry-files": "^1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "node uploadSourcemaps.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
